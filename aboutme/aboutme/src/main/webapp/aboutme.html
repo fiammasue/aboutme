@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+    <head>
+        <link rel="stylesheet" href="aboutme.css">
+        <title>자기소개</title>
+    </head>
+    <body>
+        <header>
+        <div class = "index_header">
+            <ul id="right">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="aboutme.html">자기소개</a></li>
+                <li><a href="photo.html">내사진</a></li>
+                <li><a href="/aboutme/today" onclick="show_time()">몇시예요</a></li>
+            </ul>
+        </div>
+    </header>
+        <div class="index_body">
+           <div class="index_content">
+                <h1>이런 것을 잘해요?</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maxime doloremque provident ad quo, est minus illo excepturi id reprehenderit perspiciatis aliquid ut incidunt nihil impedit numquam minima cupiditate eveniet.</p>
+            
+            
+                <h1>
+                    나의 포트폴리오
+                </h1>
+                <a href="www.naver.com">www.naver.com</a><br>
+                <p>제홈페이지입니다. 이곳에서 많은 개발코드를 볼 수 있습니다</p><br>
+                <a href="www.github.com">www.github.com</a><br>
+                <p>제가 주로 개발하는 소스코드입니다. 이곳에서 많은 부분을 확인할수 있습니다.</p>
+            
+                <h1>
+                    나의 최근 프로젝트 설명
+                </h1>
+            <p>나의 최근 프로젝트는 쇼핑몰 프로젝트입니다. 인터넷에 널린게 쇼핑몰코드라서 아주 잘 베껴썼죠</p>
+            
+        </div>
+        </div>
+        <footer>
+        <div class="index_footer">
+            handout@theproject<br>
+            http://localhost:8080/aboutme/today
+        </div>
+    </footer>
+    </body>
+    <script type="text/javascript">
+        function show_time(){
+        today=new Date()
+        mon=today.getMonth()+1
+        alert("오늘은 "+today.getFullYear()+"년 "+mon+"월 "+today.getDate()+"일 이고, 현재시간은 "+today.getHours()+"시 "+today.getMinutes()+"분입니다.")
+        }
+    </script>
+</html>

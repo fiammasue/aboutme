@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+    <head>
+        <link rel="stylesheet" href="photo.css">
+        <title>사진</title>
+    </head>
+    <body>
+        <header>
+            <div class = "index_header">
+                <ul id="right">   
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="aboutme.html">자기소개</a></li>
+                    <li><a href="photo.html">내사진</a></li>
+                    <li><a href="/aboutme/today" onclick="show_time()">몇시예요</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="index_body">
+            
+            <span>
+                <ul>
+                    <li><img src="셋쇼마루.png" alt="셋쇼마루"></li>
+                    <li> 2000-2016<br>
+                        <p>제인생의 절반을 봤던.. 완결까지 봤던 애니중에 하나죠</p></li>
+                </ul>
+                
+                
+            </span>
+            <span>
+                <ul>
+                    <li><img src="컴퓨터공학과.png" alt="컴퓨터공학과"><br></li>
+                    <li>2019-2021<br>
+                        <p> 컴퓨터공학과와 프로해커는 저의 인생 절반의 꿈이었습니다. 컴퓨터공학은 해킹을 배우지 않았죠</p></li>
+                </ul>
+            
+                
+            </span>
+     
+    </div>
+        <footer>
+            <div class="index_footer">
+                handout@theproject<br>
+                http://localhost:8080/aboutme/today
+            </div>
+        </footer>
+        
+    </body>
+    <script type="text/javascript">
+        function show_time(){
+        today=new Date()
+        mon=today.getMonth()+1
+        alert("오늘은 "+today.getFullYear()+"년 "+mon+"월 "+today.getDate()+"일 이고, 현재시간은 "+today.getHours()+"시 "+today.getMinutes()+"분입니다.")
+        }
+    </script>
+</html>
